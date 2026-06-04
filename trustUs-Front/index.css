@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: #f8f6f1;
+  color: #1c1917;
+  line-height: 1.5;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid rgba(220, 38, 38, 0.08);
+  background-color: #f8f6f1;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.shop {
+  background-color: #dc2626;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.MStore {
+  color: #78716c;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #57534e;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.nav-links h5:hover {
+  color: #dc2626;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 80px 50px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.half1 {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 24px;
+  align-content: center;
+}
+
+.half1 h4 {
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.half1 h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1c1917;
+  letter-spacing: -0.5px;
+}
+
+.half1 p {
+  color: #57534e;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  background-color: #dc2626;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #dc2626;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button-group button:hover {
+  background-color: #ffffff;
+  color: #dc2626;
+  border-color: #dc2626;
+  transform: none;
+}
+
+.half2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  background-color: #fffdf9;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(28, 25, 23, 0.06);
+  border-color: #dc2626;
+}
+
+.image-area {
+  position: relative;
+  background-color: #f1ede5;
+  height: 320px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+.product-info {
+  padding: 5px 2px;
+}
+
+.product-info p:first-child {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #dc2626;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1917;
+  margin-bottom: 12px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.price {
+  font-size: 16px;
+  color: #1c1917;
+  font-weight: 700;
+}
+
+.meta {
+  font-size: 13px;
+  color: #78716c;
+}
+
+.products-section {
+  padding: 80px 50px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.products-header {
+  margin-bottom: 40px;
+}
+
+.products-header h4 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #1c1917;
+}
+
+.products-header p {
+  color: #6b6258;
+  font-size: 15px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.add-to-cart-btn {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.add-to-cart-btn:hover {
+  background: #b91c1c;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
+}
+
+.footer {
+  background-color: #f8f6f1;
+  padding: 80px 50px 50px;
+  border-top: 1px solid rgba(220, 38, 38, 0.08);
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-left h4 {
+  display: inline-block;
+  background-color: #dc2626;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  color: #8a8175;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h6 {
+  color: #1c1917;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.footer-column p {
+  color: #5f584f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-column p:hover {
+  color: #dc2626;
+}
+
+.social-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: #dc2626;
+}
+
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 40px 20px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-right {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
